@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+        <title>Ejemplo de formulario</title>
+
+    </head>
+    <body>
+        <form method="get" action="/contexto/FormularioServlet" name="datos">
+            Nombre: <input type="text" name="nombre"><br>
+            Apellidos:<input type="text" name="apellidos"><br>
+            Edad:
+            <select name="edad">
+                <option>Menor de 18</option>
+                <option>De 18 a 30</option>
+                <option>De 30 a 55</option>
+                <option>Mayor de 55</option>
+                <option>Mayor de 70 </option>
+            </select>
+            <br>
+            Hobbies:<br>
+            <!--Campo de seleccion múltiple-- será un array[]-->
+            <input name="hobbies" value="lectura" type="checkbox">Lectura<br>
+            <input name="hobbies" value="tele" type="checkbox">Ver la tele<br>
+            <input name="hobbies" value="deporte" type="checkbox">Hacer deporte<br>
+            <input name="hobbies" value="emborracharse" type="checkbox">Emborracharse<br>
+            <br>
+            <input type="submit" value="Enviar" name="btnEnviar" />
+        </form>
+    </body>
+</html>
